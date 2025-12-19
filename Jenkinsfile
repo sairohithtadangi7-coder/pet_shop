@@ -1,7 +1,8 @@
 node {
 
     stage('Checkout') {
-        git url: 'https://github.com/sairohithtadangi7-coder/pet_shop.git'
+        git branch: 'main',
+            url: 'https://github.com/sairohithtadangi7-coder/pet_shop.git'
     }
 
     stage('Build') {
