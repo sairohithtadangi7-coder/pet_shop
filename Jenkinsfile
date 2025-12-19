@@ -11,11 +11,7 @@ node {
 
     stage('SonarQube Analysis') {
         withSonarQubeEnv('SonarQube') {
-            sh '''
-            mvn sonar:sonar \
-            -Dsonar.projectKey=pet-shop \
-            -Dsonar.projectName=pet-shop
-            '''
+            sh 'mvn sonar:sonar'
         }
     }
 
